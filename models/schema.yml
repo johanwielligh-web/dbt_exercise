@@ -24,7 +24,8 @@ models:
         description: Purchase order business key
         data_tests:
           - unique
-- name: hub_product
+          
+  - name: hub_product
     description: Hub for Product data
     columns:
       - name: Product_hky
@@ -47,4 +48,4 @@ models:
         description: Product business key
         data_tests:
           - unique
-          
+            
