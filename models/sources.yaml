@@ -1,0 +1,18 @@
+version: 2
+
+sources:
+    - name: EEE_TRAINING_DV
+      description: This is a replica of the Postgres database used by our app
+      database: EEE_TRAINING_JWI
+      schema: EEE_TRAINING_DV
+      tables:
+          - name: hub_purchase_order
+            description: Hub for Purchase orders.
+          - name: hub_product
+            description: Hub for Porducts.
+          - name: lnk_purchase_order_product
+            description: Link between PO and Product Hubs.            
+          - name: sat_purchase_order
+            description: Satellite for PO details.
+          - name: sat_product
+            description: Satellite for Product details.     

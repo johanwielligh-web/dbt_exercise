@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: hub_purchase_order
+    description: Hub for Purchase order data
+    columns:
+      - name: Purchase_order_hky
+        description: Hashkey for PO Hub
+        data_tests:
+          - unique
+      - name: LDTS
+        description: Loaded date
+        data_tests:
+          - not_null
+      - name: LLOAD_ID
+        description: Load id
+        data_tests:
+          - not_null
+      - name: Record_Source2
+        description: Source of the loaded record
+        data_tests:
+          - not_null
+      - name: Purchase_order_bk
+        description: Purchase order business key
+        data_tests:
+          - unique
+          
+          
