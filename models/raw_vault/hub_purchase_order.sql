@@ -5,4 +5,4 @@ select
     Record_source2,
     Purchase_order_bk
 from
-    {{source('dbt_training_example','Hub_purchase_order')}}
+    {{source('dbt_training_exercise','hub_purchase_order')}}
