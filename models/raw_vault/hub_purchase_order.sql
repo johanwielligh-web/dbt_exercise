@@ -4,5 +4,4 @@ select
     LLOAD_ID,
     Record_source2,
     Purchase_order_bk
-from
-    {{source('dbt_training_exercise','hub_purchase_order')}}
+from   {{ source('EEE_TRAINING_DV','hub_purchase_order') }}
