@@ -49,4 +49,62 @@ models:
         data_tests:
           - not_null
           
-            
+  - name: sat_product
+    description: Satellite for Product data
+    columns:
+      - name: Product_hky
+        description: Hashkey for Product Hub
+        data_tests:
+          - not_null          
+      - name: LDTS
+        description: Loaded date
+        data_tests:
+          - not_null
+      - name: DELETE_FLAG
+        description: See if the data is deleted
+        data_tests:
+          - not_null
+      - name: CATEGORY_NAME
+        description: Product category
+        data_tests:
+          - not_null
+      - name: SUBCATEGORY_NAME
+        description: Product subcategory
+        data_tests:
+          - not_null            
+      - name: LISTPRICE
+        description: Product price
+        data_tests:
+          - not_null  
+      - name: PRODUCT_NAME
+        description: Product name
+        data_tests:
+          - not_null            
+
+  - name: sat_purchase_order
+    description: Satellite for Purchase order data
+    columns:
+      - name: Purchase_order_hky
+        description: Hashkey for Purchase order Hub
+        data_tests:
+          - not_null          
+      - name: LDTS
+        description: Loaded date
+        data_tests:
+          - not_null
+      - name: DELETE_FLAG
+        description: See if the data is deleted
+        data_tests:
+          - not_null
+      - name: ORDERDATE
+        description: Purchase order date
+        data_tests:
+          - not_null
+      - name: SUBTOTAL
+        description: Subtotal of the order
+        data_tests:
+          - not_null            
+      - name: TOTALDUE
+        description: Total amount due of the PO
+        data_tests:
+          - not_null
