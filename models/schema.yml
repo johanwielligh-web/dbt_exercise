@@ -7,7 +7,7 @@ models:
       - name: Purchase_order_hky
         description: Hashkey for PO Hub
         data_tests:
-          - unique
+          - not_null
       - name: LDTS
         description: Loaded date
         data_tests:
@@ -23,6 +23,30 @@ models:
       - name: Purchase_order_bk
         description: Purchase order business key
         data_tests:
-          - unique
+          - not_null
+                   
+  - name: hub_product
+    description: Hub for Product data
+    columns:
+      - name: Product_hky
+        description: Hashkey for Product Hub
+        data_tests:
+          - not_null          
+      - name: LDTS
+        description: Loaded date
+        data_tests:
+          - not_null
+      - name: LLOAD_ID
+        description: Load id
+        data_tests:
+          - not_null
+      - name: Record_Source2
+        description: Source of the loaded record
+        data_tests:
+          - not_null
+      - name: Product_bk
+        description: Product business key
+        data_tests:
+          - not_null
           
-          
+            
