@@ -108,3 +108,47 @@ models:
         description: Total amount due of the PO
         data_tests:
           - not_null
+
+  - name: dim_purchase_order
+    description: SCD type 2 for Purchase orders
+    columns:
+      - name: purchase_order_key
+        description: Hashkey for Purchase order
+      - name: purchase_order_business_key
+        description: Business key for Purchase order       
+      - name: delete_flag
+        description: Show if the data record has been deleted
+      - name: subtotal
+        description: Subtotal of the order                
+      - name: totaldue
+        description: Total of the order            
+      - name: valid_from
+        description: Shows the date when the record is valid from     
+      - name: valid_to
+        description: Shows the date when the record is valid to          
+      - name: is_current
+        description: Shows if the current record is current        
+
+  - name: dim_product
+    description: SCD type 2 for Products
+    columns:
+      - name: product_key
+        description: Hashkey for Products
+      - name: product_business_key
+        description: Business key for Products       
+      - name: delete_flag
+        description: Show if the data record has been deleted
+      - name: category_name
+        description: Category name of the product                
+      - name: subcategory_name
+        description: Subcategory name of the product  
+      - name: listprice
+        description: List price of the product                   
+      - name: valid_from
+        description: Shows the date when the record is valid from   
+      - name: product_name
+        description: Product name             
+      - name: valid_to
+        description: Shows the date when the record is valid to          
+      - name: is_current
+        description: Shows if the current record is current           
